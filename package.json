@@ -2,11 +2,12 @@
   "name": "eslint-config-artdeco",
   "version": "1.0.0",
   "description": "An eslint shareable config for Art Deco Code.",
-  "main": "src",
+  "main": "build",
   "scripts": {
     "test": "zoroaster test/spec --babel",
+    "test-build": "BABEL_ENV=test-build zoroaster test/spec --babel",
     "test-watch": "zoroaster test/spec --watch --babel",
-    "build": "babel src --out-dir build"
+    "build": "b --source-maps"
   },
   "repository": {
     "type": "git",

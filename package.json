@@ -23,9 +23,6 @@
   },
   "homepage": "https://github.com/artdecocode/eslint-config-artdeco#readme",
   "devDependencies": {
-    "zoroaster": "1.1.0"
-  },
-  "peerDependencies": {
-    "eslint": ">= 4"
+    "zoroaster": "2.1.0"
   }
 }

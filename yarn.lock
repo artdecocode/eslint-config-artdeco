@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-assert-diff@1.2.5:
-  version "1.2.5"
-  resolved "https://registry.yarnpkg.com/assert-diff/-/assert-diff-1.2.5.tgz#2f578de16a2509fee1601eca0afb77ad3fb2c02b"
+assert-diff@1.2.6:
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/assert-diff/-/assert-diff-1.2.6.tgz#1b44d6f24a7e3018f557768ee350ae9a732c2fc6"
   dependencies:
     assert-plus "1.0.0"
     json-diff "0.5.2"
@@ -13,9 +13,12 @@ assert-plus@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/assert-plus/-/assert-plus-1.0.0.tgz#f12e0f3c5d77b0b1cdd9146942e4e96c1e4dd525"
 
-assert-throws@1.3.1:
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/assert-throws/-/assert-throws-1.3.1.tgz#335e64b8820217a9c37e7477153817b2956bc1c7"
+assert-throws@2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/assert-throws/-/assert-throws-2.1.0.tgz#bae47b8b04eed7a5953964a567f697c367a51da5"
+  dependencies:
+    erotic "1.1.0"
+    erte "1.1.1"
 
 catchment@2.0.1:
   version "2.0.1"
@@ -35,6 +38,10 @@ cli-color@~0.1.6:
   dependencies:
     es5-ext "0.8.x"
 
+diff@3.5.0:
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/diff/-/diff-3.5.0.tgz#800c0dd1e0a8bfbc95835c202ad220fe317e5a12"
+
 difflib@~0.2.1:
   version "0.2.4"
   resolved "https://registry.yarnpkg.com/difflib/-/difflib-0.2.4.tgz#b5e30361a6db023176d562892db85940a718f47e"
@@ -46,6 +53,18 @@ dreamopt@~0.6.0:
   resolved "https://registry.yarnpkg.com/dreamopt/-/dreamopt-0.6.0.tgz#d813ccdac8d39d8ad526775514a13dda664d6b4b"
   dependencies:
     wordwrap ">=0.0.2"
+
+erotic@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/erotic/-/erotic-1.1.0.tgz#ccfa6c05e836bae8610ac407dbe191efa9cdbeda"
+  dependencies:
+    clean-stack "1.3.0"
+
+erte@1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/erte/-/erte-1.1.1.tgz#b9bd6252168c256232a06e37e472d172a895c5ee"
+  dependencies:
+    diff "3.5.0"
 
 es5-ext@0.8.x:
   version "0.8.2"
@@ -73,17 +92,30 @@ spawncommand@1.1.0:
   dependencies:
     catchment "^1.0.0"
 
+spawncommand@2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/spawncommand/-/spawncommand-2.0.1.tgz#088476fd8aa3c63932309ce0e76a8924d51a34ab"
+  dependencies:
+    catchment "2.0.1"
+
 wordwrap@>=0.0.2:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/wordwrap/-/wordwrap-1.0.0.tgz#27584810891456a4171c8d0226441ade90cbcaeb"
 
-zoroaster@1.1.0:
+yarn-s@1.1.0:
   version "1.1.0"
-  resolved "https://registry.yarnpkg.com/zoroaster/-/zoroaster-1.1.0.tgz#8ca786d608496efeec58d133e606d572a584d73d"
+  resolved "https://registry.yarnpkg.com/yarn-s/-/yarn-s-1.1.0.tgz#8c65555d7c7ccb5a61e18440b8b0e4cb48b76b9d"
   dependencies:
-    assert-diff "1.2.5"
-    assert-throws "1.3.1"
+    spawncommand "1.1.0"
+
+zoroaster@2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/zoroaster/-/zoroaster-2.1.0.tgz#93e698ae87be2c5ff7dcbf305abec75058561ada"
+  dependencies:
+    assert-diff "1.2.6"
+    assert-throws "2.1.0"
     catchment "2.0.1"
     clean-stack "1.3.0"
     promto "1.0.1"
-    spawncommand "1.1.0"
+    spawncommand "2.0.1"
+    yarn-s "1.1.0"
